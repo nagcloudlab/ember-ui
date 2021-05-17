@@ -1,0 +1,63 @@
+
+-------------------------------------------------------------------------------
+Lab
+-------------------------------------------------------------------------------
+
+ 1- Docker | NVM
+
+ 2- VS-code editor
+
+ 3- Chrome browser
+
+
+------------------------------------------------------------------------------
+To create/start new container
+------------------------------------------------------------------------------
+
+> docker version
+
+> docker image ls
+
+> docker container ls
+
+> docker pull node:4.9.1
+
+> docker run -it -p 4200:4200 -p 35729:35729 -v local-ws:/var/ember --name ember-dev-container node:4.9.1 /bin/sh
+
+> # node -v
+> # npm -v
+
+> # npm i bower -g
+> # npm i ember-cli@1.13.0 -g
+
+> # cd /var/ember
+
+> # ember new <app-name>
+
+> # cd <app-name>
+
+> # npm start
+
+> # exit
+
+
+
+------------------------------------------------------------------------------
+To start existing container
+------------------------------------------------------------------------------
+
+> docker container ls -a
+
+> docker start <container-id|container-name>
+
+> docker exec -it <container-id|container-name> /bin/sh
+
+
+> # cd /var/ember
+
+> # ember new <app-name>
+
+> # cd <app-name>
+
+> # npm start
+
