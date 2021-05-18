@@ -1,0 +1,8 @@
+
+
+
+1. Object Model  ( Model )
+2. Templates i.e hbs ( View )
+3. Routing( Controller )
+
+
