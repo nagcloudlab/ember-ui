@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-3">
+        <img class="img-fluid" src={{this.product.image}} alt={{this.product.name}} />
+        <hr />
+        {{yield}}
+    </div>
+    <div class="col-xs-12 col-sm-9">
+        <div>{{this.product.name}}</div>
+        <div>{{currency this.product.price}}</div>
+        {{#if this.product.isAvailable}}
+        <button {{action 'buy' this.product on="click"}} class="mt-3 btn btn-sm btn-dark">buy</button>
+        {{/if}}
+        <div class="mt-3">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a {{action 'changeTab' 1 on="click" }} class="nav-link" class={{if (eq this.currentTab
+                        1) 'active' '' }} href>Description</a>
+                </li>
+                <li class="nav-item">
+                    <a {{action 'changeTab' 2 on="click" }} class="nav-link" class={{if (eq this.currentTab
+                        2) 'active' '' }} href>Specification</a>
+                </li>
+                <li class="nav-item">
+                    <a {{action 'changeTab' 3 on="click" }} class="nav-link" class={{if (eq this.currentTab
+                        3) 'active' '' }} href>Reviews</a>
+                </li>
+            </ul>
+            {{#if (eq this.currentTab 1)}}
+            <div>{{this.product.description}}</div>
+            {{/if}}
+            {{#if (eq this.currentTab 2)}}
+            <div>Not Yet</div>
+            {{/if}}
+            {{#if (eq this.currentTab 3)}}
+            <div>None Yet</div>
+            {{/if}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="list-group">
+    {{#each this.model as |productData|}}
+
+    {{#component 'my-product-comp' product=productData buy="addToCart"}}
+        <span>by Nag</span>
+    {{/component}}
+
+    {{/each}}
+</div>

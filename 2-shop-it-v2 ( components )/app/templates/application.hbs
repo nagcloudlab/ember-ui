@@ -1,0 +1,17 @@
+<div class="container">
+    <hr />
+    <div>shop-IT</div>
+    <hr />
+    {{this.cartSize}} item(s) in cart
+    <hr />
+    <ul class="nav">
+        <li class="nav-item">
+            {{#link-to 'index' class='nav-link'}}Home{{/link-to}}
+        </li>
+        <li class="nav-item">
+            {{#link-to 'products' class='nav-link'}}Products{{/link-to}}
+        </li>
+    </ul>
+    <hr />
+    {{outlet}}
+</div>
