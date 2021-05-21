@@ -73,3 +73,20 @@ Working with transitions
 Managing dependencies between controllers
 
 
+Ch-5.Components
+----------------------------------
+
+Using components in an application
+
+Using events in components
+
+Implementing actions in components
+
+Passing properties to a component
+
+Using yield with components
+
+
+
+Ch-6.Data / Store
+----------------------------------

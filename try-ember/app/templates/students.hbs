@@ -1,0 +1,19 @@
+{{page-title "Students"}}
+
+<div class="card card-body">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each model as |stud|}}
+                {{app-student-comp student=stud}}
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+
+{{outlet}}
